@@ -10,6 +10,7 @@ class SquareTest {
     int actualCount = 0;
     int expectedCount = 3;
     
+    //Create GeometricObject array for testing.  input the expected number of Squares/Colorable objects
     GeometricObject[] arr = new GeometricObject[5];
     
     arr[0] = new GeometricObject();
@@ -18,6 +19,7 @@ class SquareTest {
     arr[3] = new Square();
     arr[4] = new Square();
     
+    //Increment through array and count actual number of Colorable objects
     for(int i = 0; i < arr.length; i++) {
       if(arr[i] instanceof Colorable) {
         ((Colorable) arr[i]).howToColor();
